@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Editor Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav id="navbar">
+    <a href="#home" class="logo">
+      <div class="logo-icon">🎬</div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#works">Works</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+    </ul>
+    <button class="btn-orange" onclick="scrollToSection('contact')">Get in Touch</button>
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="home">
+    <div class="hero-left">
+      <div class="hero-badge">PROFESSIONAL VIDEO EDITOR</div>
+      <h1 class="hero-title">
+        Reels &amp; Shorts<br>
+        <span>Video Editor</span>
+      </h1>
+      <p class="hero-desc">
+        Transforming raw footage into viral content that captivates audiences and drives engagement across all social media platforms.
+      </p>
+      <div class="hero-btns">
+        <button class="btn-orange" onclick="scrollToSection('contact')">Start Your Project</button>
+        <button class="btn-outline" onclick="scrollToSection('works')">View Portfolio</button>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <h3>500+</h3>
+          <p>Projects Done</p>
+        </div>
+        <div class="stat-item">
+          <h3>50M+</h3>
+          <p>Total Views</p>
+        </div>
+        <div class="stat-item">
+          <h3>98%</h3>
+          <p>Client Satisfaction</p>
+        </div>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-img-placeholder">
+        <div class="editor-visual">
+          <div class="editor-top">
+            <div class="editor-dot" style="background:#ff5f57"></div>
+            <div class="editor-dot" style="background:#febc2e"></div>
+            <div class="editor-dot" style="background:#28c840"></div>
+            <span class="editor-label">Video Editor Pro</span>
+          </div>
+          <div class="editor-screen">
+            <span class="editor-icon">🎬</span>
+          </div>
+          <div class="timeline">
+            <div class="timeline-header">
+              <span class="timeline-text">TIMELINE</span>
+              <span class="timeline-time">00:45 / 01:30</span>
+            </div>
+            <div class="timeline-track track-orange"></div>
+            <div class="timeline-track track-blue"></div>
+            <div class="timeline-track track-green"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about">
+    <div class="about-img fade-up">
+      <div class="about-img-inner">
+        <div class="about-monitor">
+          <div class="monitor-top">
+            <div class="monitor-dot" style="background:#ff5f57"></div>
+            <div class="monitor-dot" style="background:#febc2e"></div>
+            <div class="monitor-dot" style="background:#28c840"></div>
+          </div>
+          <div class="monitor-screen">🎥</div>
+          <div class="monitor-timeline">
+            <div class="monitor-track"><div class="monitor-fill" style="width:55%;background:var(--orange)"></div></div>
+            <div class="monitor-track"><div class="monitor-fill" style="width:35%;background:#4a9eff"></div></div>
+            <div class="monitor-track"><div class="monitor-fill" style="width:70%;background:#4aff9e"></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="glow-green"></div>
+    </div>
+    <div class="about-right fade-up">
+      <div class="section-label">ABOUT ME</div>
+      <h2 class="section-title">Crafting Stories That <span>Go Viral</span></h2>
+      <p class="about-text">
+        With over 5 years of experience in video editing, I specialize in creating high-impact short-form content that captures attention in the first 3 seconds and keeps viewers engaged until the very end.
+      </p>
+      <p class="about-text">
+        My expertise spans across Instagram Reels, YouTube Shorts, TikTok videos, and all major social media platforms. I understand the algorithms, trends, and psychology behind viral content.
+      </p>
+      <div class="about-cards">
+        <div class="about-card">
+          <div class="about-card-icon">🏆</div>
+          <h4>5+</h4>
+          <p>Years Professional Experience</p>
+        </div>
+        <div class="about-card">
+          <div class="about-card-icon">👥</div>
+          <h4>200+</h4>
+          <p>Happy Clients</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section id="services">
+    <div class="section-label">SERVICES</div>
+    <h2 class="section-title">What I <span>Offer</span></h2>
+    <p class="section-desc">Comprehensive video editing services designed to make your content stand out</p>
+    <div class="services-grid">
+
+      <div class="service-card fade-up">
+        <div class="service-icon">🎞️</div>
+        <h3>Reel Editing</h3>
+        <p>Transform your raw footage into captivating Instagram Reels that stop the scroll and drive engagement.</p>
+        <ul class="service-list">
+          <li>Hook optimization</li>
+          <li>Trending transitions</li>
+          <li>Audio sync</li>
+          <li>Caption animation</li>
+        </ul>
+      </div>
+
+      <div class="service-card fade-up">
+        <div class="service-icon">▶️</div>
+        <h3>Shorts Editing</h3>
+        <p>Create addictive YouTube Shorts that maximize watch time and boost your channel growth.</p>
+        <ul class="service-list">
+          <li>Fast-paced cuts</li>
+          <li>Dynamic text</li>
+          <li>Sound effects</li>
+          <li>Viral formatting</li>
+        </ul>
+      </div>
+
+      <div class="service-card fade-up service-card--highlight">
+        <div class="service-icon">✨</div>
+        <h3>Motion Graphics</h3>
+        <p>Eye-catching animations and graphics that elevate your content and enhance storytelling.</p>
+        <ul class="service-list">
+          <li>Logo animation</li>
+          <li>Lower thirds</li>
+          <li>Transitions</li>
+          <li>Visual effects</li>
+        </ul>
+      </div>
+
+      <div class="service-card fade-up">
+        <div class="service-icon">🎨</div>
+        <h3>Color Grading</h3>
+        <p>Professional color correction and grading to give your videos a cinematic, polished look.</p>
+        <ul class="service-list">
+          <li>Mood enhancement</li>
+          <li>Skin tone correction</li>
+          <li>LUT application</li>
+          <li>Consistency</li>
+        </ul>
+      </div>
+
+      <div class="service-card fade-up service-card--highlight">
+        <div class="service-icon">📊</div>
+        <h3>Social Media Optimization</h3>
+        <p>Strategic editing tailored to each platform's algorithm and audience behavior patterns.</p>
+        <ul class="service-list">
+          <li>Platform specs</li>
+          <li>Trend integration</li>
+          <li>CTA placement</li>
+          <li>Engagement hooks</li>
+        </ul>
+      </div>
+
+      <div class="service-card fade-up">
+        <div class="service-icon">🎵</div>
+        <h3>Audio Enhancement</h3>
+        <p>Crystal-clear audio mixing, music selection, and sound design for maximum impact.</p>
+        <ul class="service-list">
+          <li>Noise reduction</li>
+          <li>Music licensing</li>
+          <li>Voiceover editing</li>
+          <li>Sound effects</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== PORTFOLIO ===== -->
+  <section id="works">
+    <div class="section-label">PORTFOLIO</div>
+    <h2 class="section-title">Sample <span>Works</span></h2>
+    <p class="section-desc">A showcase of viral content that drove millions of views and engagement</p>
+    <div class="filter-btns">
+      <button class="filter-btn active" onclick="filterPortfolio('all', this)">All Works</button>
+      <button class="filter-btn" onclick="filterPortfolio('reels', this)">Reels</button>
+      <button class="filter-btn" onclick="filterPortfolio('shorts', this)">Shorts</button>
+    </div>
+    <div class="portfolio-grid" id="portfolioGrid">
+
+      <div class="portfolio-item fade-up" data-cat="reels">
+        <div class="portfolio-placeholder p1">👗</div>
+        <div class="overlay"><div class="play-icon">▶</div></div>
+        <div class="portfolio-tag"><span>Fashion Reel</span></div>
+      </div>
+
+      <div class="portfolio-item fade-up" data-cat="shorts">
+        <div class="portfolio-placeholder p2">💻</div>
+        <div class="overlay"><div class="play-icon">▶</div></div>
+        <div class="portfolio-tag"><span>Tech Short</span></div>
+      </div>
+
+      <div class="portfolio-item fade-up" data-cat="reels">
+        <div class="portfolio-placeholder p3">💪</div>
+        <div class="overlay"><div class="play-icon">▶</div></div>
+        <div class="portfolio-tag"><span>Fitness Reel</span></div>
+      </div>
+
+      <div class="portfolio-item fade-up" data-cat="shorts">
+        <div class="portfolio-placeholder p4">🍕</div>
+        <div class="overlay"><div class="play-icon">▶</div></div>
+        <div class="portfolio-tag"><span>Food Short</span></div>
+      </div>
+
+      <div class="portfolio-item fade-up" data-cat="reels">
+        <div class="portfolio-placeholder p5">🎸</div>
+        <div class="overlay"><div class="play-icon">▶</div></div>
+        <div class="portfolio-tag"><span>Music Reel</span></div>
+      </div>
+
+      <div class="portfolio-item fade-up" data-cat="shorts">
+        <div class="portfolio-placeholder p6">🌍</div>
+        <div class="overlay"><div class="play-icon">▶</div></div>
+        <div class="portfolio-tag"><span>Travel Short</span></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== PRICING ===== -->
+  <section id="pricing">
+    <div class="section-label">PRICING</div>
+    <h2 class="section-title">Choose Your <span>Plan</span></h2>
+    <p class="section-desc">Flexible pricing options to match your content creation needs</p>
+    <div class="pricing-grid">
+
+      <div class="pricing-card fade-up">
+        <h3>Starter</h3>
+        <p class="pricing-desc">Perfect for individuals and small creators</p>
+        <div class="price">
+          <span class="amount">$299</span>
+          <span class="period">/month</span>
+        </div>
+        <ul class="pricing-features">
+          <li><span class="check">✓</span> 5 videos per month</li>
+          <li><span class="check">✓</span> Basic color grading</li>
+          <li><span class="check">✓</span> Standard transitions</li>
+          <li><span class="check">✓</span> Music selection</li>
+          <li><span class="check">✓</span> 48-hour delivery</li>
+          <li><span class="check">✓</span> Email support</li>
+        </ul>
+        <button class="btn-pricing btn-pricing-outline">Get Started</button>
+      </div>
+
+      <div class="pricing-card popular fade-up">
+        <div class="popular-badge">MOST POPULAR</div>
+        <h3>Professional</h3>
+        <p class="pricing-desc">Most popular for growing brands</p>
+        <div class="price">
+          <span class="amount">$599</span>
+          <span class="period">/month</span>
+        </div>
+        <ul class="pricing-features">
+          <li><span class="check">✓</span> 15 videos per month</li>
+          <li><span class="check">✓</span> Advanced color grading</li>
+          <li><span class="check">✓</span> Custom transitions</li>
+          <li><span class="check">✓</span> Motion graphics</li>
+          <li><span class="check">✓</span> 24-hour delivery</li>
+          <li><span class="check">✓</span> Priority support</li>
+        </ul>
+        <button class="btn-pricing btn-pricing-filled">Get Started</button>
+      </div>
+
+      <div class="pricing-card fade-up">
+        <h3>Enterprise</h3>
+        <p class="pricing-desc">For agencies and large businesses</p>
+        <div class="price">
+          <span class="amount">$1299</span>
+          <span class="period">/month</span>
+        </div>
+        <ul class="pricing-features">
+          <li><span class="check">✓</span> Unlimited videos</li>
+          <li><span class="check">✓</span> Cinematic color grading</li>
+          <li><span class="check">✓</span> Custom animations</li>
+          <li><span class="check">✓</span> Advanced VFX</li>
+          <li><span class="check">✓</span> 12-hour delivery</li>
+          <li><span class="check">✓</span> Dedicated support</li>
+        </ul>
+        <button class="btn-pricing btn-pricing-outline">Get Started</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact">
+    <div class="section-label">CONTACT</div>
+    <h2 class="section-title">Let's Create Something <span>Amazing</span></h2>
+    <p class="section-desc">Ready to take your content to the next level? Get in touch and let's discuss your project</p>
+    <div class="contact-grid">
+
+      <div class="contact-left">
+        <div class="contact-card fade-up">
+          <div class="contact-card-icon">✉️</div>
+          <h4>Email Me</h4>
+          <p>Get a response within 24 hours</p>
+          <a href="mailto:hello@videoeditor.com">hello@videoeditor.com</a>
+        </div>
+        <div class="contact-card fade-up">
+          <div class="contact-card-icon">🕐</div>
+          <h4>Working Hours</h4>
+          <p>Monday - Friday</p>
+          <a href="#">9:00 AM - 6:00 PM EST</a>
+        </div>
+        <div class="contact-card fade-up">
+          <div class="contact-card-icon">🔗</div>
+          <h4>Follow Me</h4>
+          <div class="social-btns">
+            <a href="#" class="social-btn">📷</a>
+            <a href="#" class="social-btn">▶️</a>
+            <a href="#" class="social-btn">💼</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form fade-up">
+        <div class="form-group">
+          <label>Your Name</label>
+          <input type="text" id="userName" placeholder="John Doe">
+        </div>
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" id="userEmail" placeholder="john@example.com">
+        </div>
+        <div class="form-group">
+          <label>Service Interested In</label>
+          <select id="userService">
+            <option value="">Select a service</option>
+            <option>Reel Editing</option>
+            <option>Shorts Editing</option>
+            <option>Motion Graphics</option>
+            <option>Color Grading</option>
+            <option>Social Media Optimization</option>
+            <option>Audio Enhancement</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Project Details</label>
+          <textarea id="projectDetails" placeholder="Tell me about your project..." maxlength="500" oninput="updateCharCount()"></textarea>
+          <div class="char-count"><span id="charCount">0</span>/500 characters</div>
+        </div>
+        <button class="btn-send" onclick="sendMessage()">Send Message</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>© 2025 Video Editor Portfolio. All rights reserved.</p>
+    <span>Powered by <strong class="footer-brand">Readdy</strong></span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
